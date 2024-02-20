@@ -21,11 +21,16 @@ public class MyServlet extends HttpServlet {
 		out.println("<html>");
 		out.println("<head><title>Formulario</title></head>");
 		out.println("<body>");
-		out.println("<h1>Formulario</h1>");
+		out.println("<h1>Formulario.</h1>");
 
 		out.println("<form action=\"/myServlet2\">");
 		out.println("<label for=\"nombre\">Nombre:</label><br>");
 		out.println("<input type=\"text\" id=\"nombre\" name=\"nombre\"><br><br>" );
+		out.println("<label for=\"apellidos\">Apellidos:</label><br>");
+		out.println("<input type=\"text\" id=\"apellidos\" name=\"apellidos\"><br><br>" );
+		out.println("<label for=\"genero\">Género:</label><br>");
+		out.println("<input type=\"radio\" id=\"genero\" name=\"genero\" value=\"Bienvenido\"/>Hombre" );
+		out.println("<input type=\"radio\" id=\"genero\" name=\"genero\" value=\"Bienvenida\"/>Mujer<br><br>" );
 		out.println("<input type=\"submit\" value=\"Enviar\">");
 		out.println("</form>");
 		out.println("</body></html>");

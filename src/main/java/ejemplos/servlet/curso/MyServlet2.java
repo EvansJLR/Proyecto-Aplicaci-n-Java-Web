@@ -21,7 +21,8 @@ public class MyServlet2 extends HttpServlet {
 		out.println("<html>");
 		out.println("<head><title>Formulario Recibido</title></head>");
 		out.println("<body>");
-		out.println("<h1>Bienvenid@ "+request.getParameter("nombre")+".</h1>");
+		out.println("<h1>"+request.getParameter("genero")+" "+request.getParameter("nombre")+" "+request.getParameter("apellidos")+".</h1>");
+		out.println("¡Es un placer tenerte por aquí!");
 	}
 
 }
